@@ -42,6 +42,9 @@ public class ProductService {
 		
 		return repo.findBymadein(madein);
 	}
+	public Product getByRating(double rating) {
+		return repo.findByrating(rating);
+	}
 	
 
 	
