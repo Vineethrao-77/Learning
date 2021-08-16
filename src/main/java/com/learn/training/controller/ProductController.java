@@ -73,4 +73,8 @@ public class ProductController {
 	public Product getByMadein(@PathVariable String madein) {
 		return service.getByMadein(madein);
 }
+	@GetMapping("Pro/product/{rating}")
+	public Product getByRating(@PathVariable double rating) {
+		return service.getByRating(rating);
+	}
 }
