@@ -11,6 +11,8 @@ public class Product {
 	private String brand;
 	private String madein;
 	private float price;
+	private double rating;
+	
 	public Long getId() {
 		return id;
 	}
@@ -41,13 +43,21 @@ public class Product {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	public Product(Long id, String name, String brand, String madein, float price) {
+	
+	public double getRating() {
+		return rating;
+	}
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
+	public Product(Long id, String name, String brand, String madein, float price, double rating) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.brand = brand;
 		this.madein = madein;
 		this.price = price;
+		this.rating=rating;
 	}
 	public Product() {
 		super();
